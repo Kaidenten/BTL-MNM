@@ -1,0 +1,59 @@
+:root {
+  --ew-primary: #0d6efd;
+  --ew-success: #198754;
+}
+ 
+body { min-height: 100vh; display: flex; flex-direction: column; }
+main { flex: 1; }
+ 
+/* Wallet card */
+.wallet-card {
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+  border-radius: 1.25rem;
+  color: #fff;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(13,110,253,.25);
+}
+.wallet-card .balance { font-size: 2.2rem; font-weight: 700; letter-spacing: 1px; }
+.wallet-card .label   { font-size: .85rem; opacity: .85; text-transform: uppercase; letter-spacing: .5px; }
+ 
+/* Quick action buttons */
+.quick-action .btn {
+  display: flex; flex-direction: column; align-items: center;
+  gap: .4rem; padding: .9rem .5rem; font-size: .8rem; border-radius: 1rem;
+  transition: transform .15s;
+}
+.quick-action .btn i  { font-size: 1.5rem; }
+.quick-action .btn:hover { transform: translateY(-3px); }
+ 
+/* Transaction list */
+.tx-row { transition: background .15s; }
+.tx-row:hover { background: #f8f9ff; }
+.tx-icon { width: 40px; height: 40px; border-radius: 50%; display:flex; align-items:center; justify-content:center; font-size:1.1rem; }
+ 
+/* Auth pages */
+.auth-card { max-width: 440px; margin: 5rem auto; border-radius: 1rem; }
+ 
+/* Sidebar admin */
+.admin-sidebar { min-height: 100vh; background: #1e2a3a; }
+.admin-sidebar .nav-link { color: rgba(255,255,255,.75); border-radius: .5rem; }
+.admin-sidebar .nav-link:hover, .admin-sidebar .nav-link.active { background: rgba(255,255,255,.12); color:#fff; }
+ .admin-sidebar {
+  background: linear-gradient(180deg, #1e3a5f 0%, #0f2027 100%);
+  box-shadow: 4px 0 15px rgba(0,0,0,.2);
+}
+.admin-sidebar .nav-link {
+  color: rgba(255,255,255,.7);
+  border-radius: .5rem;
+  transition: all .2s;
+}
+.admin-sidebar .nav-link:hover {
+  background: rgba(255,255,255,.1);
+  color: #fff;
+  transform: translateX(4px);
+}
+.admin-sidebar .nav-link.active {
+  background: rgba(59,130,246,.3);
+  color: #60a5fa;
+  border-left: 3px solid #3b82f6;
+}
